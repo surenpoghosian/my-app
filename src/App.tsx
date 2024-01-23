@@ -24,9 +24,9 @@ export default function App() {
         />
 
         <ParallaxLayer offset={1.3} speed={-0.3} style={{ pointerEvents: 'none' }}>
-          <video style={{ width: '15%', marginLeft: '70%' }} autoPlay loop muted className="background-video">
+          {/* <video style={{ width: '15%', marginLeft: '70%' }} autoPlay loop muted className="background-video">
             <source src="/IMG_6581.mp4" type="video/mp4" />
-          </video>
+          </video> */}
 
         </ParallaxLayer>
 
@@ -113,7 +113,6 @@ export default function App() {
           onClick={() => parallax.current.scrollTo(0)}>
           <img alt=""  src={url('clients-main')} style={{ width: '40%' }} />
         </ParallaxLayer>
-        <div>learn react</div>
       </Parallax>
     </div>
   )
