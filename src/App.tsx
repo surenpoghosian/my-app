@@ -1,4 +1,4 @@
-import { NavBar } from './Components/NavBar/NavBar';
+import { NavBar } from './Pages/NavBar/NavBar';
 import { Router } from './app/router/Router';
 import * as React from 'react'
 import { Parallax, ParallaxLayer } from '@react-spring/parallax'

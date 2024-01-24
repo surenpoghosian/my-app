@@ -1,0 +1,175 @@
+.wrapper {
+    line-height: 26px;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: black;
+  }
+  
+  form {
+    /* margin-top: 20px; */
+  }
+  
+  .errorMessage {
+    color: #f45532;
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .submit_btn {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    padding: 15px 50px;
+    border-radius: 10px;
+    margin-bottom: 25px;
+  }
+  
+  @media (max-width: 768px) {
+    .submit-message {
+      width: 125px;
+      margin-left: 200px;
+    }
+  }
+  
+  /* Contact form styles */
+  
+  .ContactForm {
+    padding: 20px;
+    width: 400px;
+  }
+  
+  .container {
+    max-width: 600px;
+    margin: 0 auto;
+    
+  }
+  
+  .formRow {
+    margin-bottom: 20px;
+  }
+  
+  /* .formInput {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+   */
+  .errorMessage {
+    color: red;
+  }
+
+  .formInput, .submit_btn {
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .formInput:focus {
+    border-color: #4caf50;
+    box-shadow: 0 0 8px rgba(76, 175, 80, 0.6);
+  }
+  
+  .submit_btn {
+    transition: background-color 0.3s, transform 0.3s;
+  }
+  
+  .submit_btn:hover {
+    background-color: #45a049;
+    transform: translateY(-2px);
+  }
+  
+  /* .submit_btn {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+  } */
+  
+  .submit_btn:hover {
+    background-color: #45a049;
+  }
+  
+  .alert {
+    padding: 20px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    color: #31708f;
+    background-color: #d9edf7;
+  }
+  
+  .alert_danger {
+    color: #a94442;
+    background-color: #f2dede;
+  }
+  
+  .btn_close {
+    cursor: pointer;
+  }
+  
+  /* Add more styles as needed */
+  
+  .header {
+    font-size: 1em;
+    color: #333; 
+}
+  .cardImage {
+    margin-top: -50px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 8px 8px 0 0;
+    margin-bottom: 20px;
+  }
+  
+  .cardImageWrapper{
+    display: flex;
+    justify-content: center;
+  }
+
+  .socialIcon{
+    cursor: pointer;
+    height: 35px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 20px;
+  }
+
+  .socialIcon:nth-child(1){
+    height: 50px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    margin-left: -20px;  
+    margin-top: -8px;
+    cursor: pointer;
+
+  }
+
+  .socialIcon:nth-child(3){
+    margin-left: 18px;
+    animation: bounce 2s infinite 1s; 
+    cursor: pointer;
+
+  }
+
+
+
+  @keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-20px);
+    }
+    60% {
+        transform: translateY(-10px);
+    }
+  }

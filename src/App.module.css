@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  background-color: black;
 }
 
 .App-logo {
@@ -13,21 +14,8 @@
   }
 }
 
-.my-container {
-
-  border-radius: 30px;
-  width: 150px;
-  height: 150px;
-}
-
-.background-video {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  z-index: -1;
+body{
+  background-color: black;
 }
 
 .App-header {
@@ -44,8 +32,6 @@
 .App-link {
   color: #61dafb;
 }
-
-
 
 @keyframes App-logo-spin {
   from {
