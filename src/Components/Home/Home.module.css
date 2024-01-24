@@ -12,6 +12,18 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
+
+p {
+  color: white;
+}
+
+.my-container {
+
+  border-radius: 30px;
+  width: 150px;
+  height: 150px;
+}
+
 .background-video {
   position: absolute;
   top: 0;
@@ -35,6 +47,10 @@
 
 .App-link {
   color: #61dafb;
+}
+
+body{
+  background-color: black;
 }
 
 @keyframes App-logo-spin {
