@@ -3,6 +3,7 @@ import { useForm } from 'react-hook-form';
 import emailjs from '@emailjs/browser';
 import { SubmitHandler } from 'react-hook-form';
 import styles from './Contacts.module.css'
+import { MoonLoader } from 'react-spinners';
 
 interface AlertInfo {
   display: boolean;
@@ -20,13 +21,10 @@ interface TemplateParams {
 // ... (previous imports and interfaces)
 
 export const Contacts: React.FC = () => {
-    const {
-      register,
-      handleSubmit,
-      reset,
-      formState: { errors }
-    } = useForm();
+    const { register, handleSubmit, reset, formState: { errors } } = useForm();
     const [disabled, setDisabled] = useState(false);
+    const [loading, setLoading] = useState(false);
+
     const [alertInfo, setAlertInfo] = useState<AlertInfo>({
       display: false,
       message: '',
@@ -40,24 +38,25 @@ export const Contacts: React.FC = () => {
       // Hide alert after 5 seconds
       setTimeout(() => {
         setAlertInfo({ display: false, message: '', type: '' });
-      }, 5000);
+      }, 3000);
     };
   
     // Function called on submit that uses emailjs to send email of valid contact form
     const onSubmit: SubmitHandler<TemplateParams> = async (data: any) => {
+
       // Destructure data object
       const { name, email, subject, message } = data;
       try {
         // Disable form while processing submission
         setDisabled(true);
-  
+        setLoading(true)
         const templateParams = {
           name,
           email,
           subject,
           message
         };
-  
+        
         await emailjs.send(
           process.env.REACT_APP_SERVICE_ID!,
           process.env.REACT_APP_TEMPLATE_ID!,
@@ -72,6 +71,7 @@ export const Contacts: React.FC = () => {
         toggleAlert('Uh oh. Something went wrong.', 'danger');
       } finally {
         setDisabled(false);
+        setLoading(false)
         reset();
       }
     };
@@ -117,7 +117,7 @@ export const Contacts: React.FC = () => {
                     </div>
                   </div>
                   {/* Row 2 of form */}
-                  <div className={styles.formRow}>
+                  <div className={`${styles.formRow} ${styles.subjectRow}`}>
                     <div className={styles.col}>
                       <input
                         type='text'
@@ -128,7 +128,7 @@ export const Contacts: React.FC = () => {
                             message: 'Subject cannot exceed 75 characters'
                           }
                         })}
-                        className={styles.formInput}
+                        className={`${styles.formInput} ${styles.subject}`}
                         placeholder='Subject'
                       ></input>
                       {errors.subject && (
@@ -138,7 +138,7 @@ export const Contacts: React.FC = () => {
                   </div>
                   {/* Row 3 of form */}
                   <div className={styles.formRow}>
-                    <div className='col'>
+                    <div className={styles.col}>
                       <textarea
                         rows={3}
                         {...register('message', {
@@ -150,8 +150,21 @@ export const Contacts: React.FC = () => {
                       {errors.message && <span className={styles.errorMessage}>Please enter a message</span>}
                     </div>
                   </div>
-                  <button className={styles.submit_btn} type='submit'>
-                    Submit
+                  <button  style={{}} className={styles.submit_btn} type='submit'>
+                    {
+                    loading
+                    ?
+                        <MoonLoader
+                        color={'#ffffff'}
+                        loading={true}
+                        size={20}
+                        aria-label="Loading Spinner"
+                        data-testid="loader"
+                        />
+                    :
+                        "Submit"
+                    }
+                  
                   </button>
                 </form>
               </div>
@@ -163,7 +176,7 @@ export const Contacts: React.FC = () => {
             className={`alert alert-${alertInfo.type} alert-dismissible mt-5`}
             role='alert'
           >
-            {alertInfo.message}
+            
             <button
               type='button'
               className={styles.btn_close}
@@ -172,7 +185,9 @@ export const Contacts: React.FC = () => {
               onClick={() =>
                 setAlertInfo({ display: false, message: '', type: '' })
               } // Clear the alert when the close button is clicked
-            ></button>
+            >
+                <span style={{color:'white'}}>{alertInfo.message}</span>
+            </button>
           </div>
         )}
       </div>
