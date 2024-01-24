@@ -2,12 +2,12 @@
 - [Description | Google docs](https://docs.google.com/document/d/1n-_P8x8FLZ3_9cIu8iFgU-A1qLOlicgTAa7mr8OlCFE/edit?usp=sharing)
 
 
-
-
 <img width="1512" alt="Screenshot 2024-01-25 at 03 38 03" src="https://github.com/surenpoghosian/my-app/assets/56313895/15d5ce36-1dcd-4aa7-9db7-7d99c162a7e7">
+<img width="1512" alt="Screenshot 2024-01-25 at 03 38 12" src="https://github.com/surenpoghosian/my-app/assets/56313895/9dab03d8-4cd6-4f43-84eb-bcf78bcec15e">
 <img width="1512" alt="Screenshot 2024-01-25 at 03 38 28" src="https://github.com/surenpoghosian/my-app/assets/56313895/203bfbb2-2561-400c-bf23-357e7d2911eb">
 <img width="1512" alt="Screenshot 2024-01-25 at 03 38 20" src="https://github.com/surenpoghosian/my-app/assets/56313895/43c96d3d-7be4-4a2a-905e-c913f54725d2">
-<img width="1512" alt="Screenshot 2024-01-25 at 03 38 12" src="https://github.com/surenpoghosian/my-app/assets/56313895/9dab03d8-4cd6-4f43-84eb-bcf78bcec15e">
+
+
 # Goals
 
 - Use advanced techniques / libs for animations
