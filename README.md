@@ -1,6 +1,9 @@
 # Suren Poghosyan | my-app
 - [Description | Google docs](https://docs.google.com/document/d/1n-_P8x8FLZ3_9cIu8iFgU-A1qLOlicgTAa7mr8OlCFE/edit?usp=sharing)
 
+# LIVE DEMO
+[my-aua-app.vercel.app](https://my-aua-app.vercel.app/home)
+
 
 <img width="1512" alt="Screenshot 2024-01-25 at 03 38 03" src="https://github.com/surenpoghosian/my-app/assets/56313895/15d5ce36-1dcd-4aa7-9db7-7d99c162a7e7">
 <img width="1512" alt="Screenshot 2024-01-25 at 03 38 12" src="https://github.com/surenpoghosian/my-app/assets/56313895/9dab03d8-4cd6-4f43-84eb-bcf78bcec15e">
