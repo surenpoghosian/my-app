@@ -43,7 +43,7 @@ export const About: React.FC = () => {
                                 color: 'purple',
                             },
                             {
-                                children: 'Participated in Picsart b2b hackathon (2024)',
+                                children: "Participated Picsart's b2b hackathon (2024)",
                                 color: 'purple',
                             },
                             {
@@ -79,7 +79,7 @@ export const About: React.FC = () => {
                                 color: 'green',
                             },
                             {
-                                children: 'Became a student at Picsart Academy, iOS development (2023)',
+                                children: 'Became a student at Picsart Academy, iOS Level Up Bootcamp (2023)',
                                 color: 'orange',
                             },
                             {
