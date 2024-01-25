@@ -47,6 +47,10 @@ export const About: React.FC = () => {
                                 color: 'purple',
                             },
                             {
+                                children: 'Deployed my first app to App Store | Greedy Kings (2023)',
+                                color: 'green',
+                            },
+                            {
                                 children: 'Invia Investments | React js, TypeScript, Jest (2023)',
                                 color: 'green',
                             },
@@ -67,7 +71,7 @@ export const About: React.FC = () => {
                                 color: 'purple',
                             },
                             {
-                                children: 'Ai Design Sprint winner at Picsart (2023)',
+                                children: 'Ai Design Sprint winner at Picsart | Frank Sinatra Back To Black (2023)',
                                 color: 'purple',
                             },
                             {
