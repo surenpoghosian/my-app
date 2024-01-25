@@ -32,7 +32,7 @@ export const Contacts: React.FC = () => {
                 </div>
             </ParallaxLayer>
 
-            <ParallaxLayer  offset={0.45} speed={0.4} style={{ zIndex:1 }}>
+            <ParallaxLayer  offset={0.45} speed={0.4} style={{ zIndex:1, height:'60px' }}>
                 <div className={styles.cardImageWrapper}>
                   <img src="/assets/instagram-icon-png.png" alt="Testimonial" className={styles.socialIcon} onClick={()=>{window.open('https://www.instagram.com/suren.poghosian/','_blank')}}/>
                   <img src="/assets/linkedin-icon.jpeg" alt="Testimonial" className={styles.socialIcon} onClick={()=>{window.open('https://www.linkedin.com/in/surenpoghosyan/','_blank')}}/>
@@ -40,7 +40,7 @@ export const Contacts: React.FC = () => {
                 </div>
             </ParallaxLayer>
 
-          <ParallaxLayer offset={0.25} speed={0.25} style={{...alignCenter}}>
+          <ParallaxLayer offset={0.5} speed={0.25} style={{...alignCenter, height:'400px'}} >
             <ContactForm/>
           </ParallaxLayer>
 

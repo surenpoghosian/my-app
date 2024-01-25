@@ -39,45 +39,94 @@ export const About: React.FC = () => {
                         pending="Suren is busy shaping his future..."
                         items={[
                             {
-                                children: 'Working at Invia Investments as a developer for a platform for investors - React js, TypeScript, Jest (2023 Dec - Now)',
-                                color: 'blue',
-                            },
-                            {
-                                children: 'Joined Picsart as Junior AI Content Creation Specialist in Growth Marketing (2023 Sep - Now)',
-                                color: 'green',
-                            },
-                            {
-                                children: 'Internship at Picsart Academy, working on video creation, Stable Diffusion/Warp Fusion (2023 June - Now)',
-                                color: 'red',
-                            },
-                            {
-                                children: 'React js developer at ManyWorlds Corp., working on admin panels (2023 Jan - 2023 Sep)',
-                                color: 'blue',
-                            },
-                            {
-                                children: 'Freelance React projects (2022 Jan - 2022 Sep)',
-                                color: 'orange',
-                            },
-                            {
-                                children: 'Machine Learning Intern at Podcastle, worked on computer vision, speech-to-text, text-to-speech APIs (2021 Aug - 2021 Dec)',
+                                children: 'Epic Jam 3 | 2nd Spin (2024)',
                                 color: 'purple',
                             },
                             {
-                                children: 'Education: Tumo (2018 - 2021)',
+                                children: 'Participated in Picsart b2b hackathon (2024)',
+                                color: 'purple',
+                            },
+                            {
+                                children: 'Invia Investments | React js, TypeScript, Jest (2023)',
                                 color: 'green',
                             },
                             {
-                                children: 'Education: Yerevan State College of Informatics, Computer Science (2018 - 2022)',
+                                children: 'Attended DigiTech23 as Academy student with a speech about generative Ai (2023)',
+                                color: 'pruple',
+                            },
+                            {
+                                children: 'Picsart | Content Creation Specialist (2023)',
                                 color: 'green',
                             },
                             {
-                                children: 'Participated in various IT events and AUA-hosted events, Drone Racing Competition, film projects (Last Year)',
-                                color: 'red',
+                                children: "iOS Bootcamp graduation, my team's project was recognized as one of two best projects (2023)",
+                                color: 'orange',
                             },
                             {
-                                children: 'About Me: 21-year-old Software Developer, interested in Running, Music, Motorcycles, Photography',
+                                children: 'Picsart HackDay (2023)',
+                                color: 'purple',
+                            },
+                            {
+                                children: 'Ai Design Sprint winner at Picsart (2023)',
+                                color: 'purple',
+                            },
+                            {
+                                children: 'Video creation internship with Generative Ai at Picsart Academy (2023)',
+                                color: 'green',
+                            },
+                            {
+                                children: 'Became a student at Picsart Academy, iOS development (2023)',
+                                color: 'orange',
+                            },
+                            {
+                                children: 'React JS developer at Manyworlds corp. (2023)',
+                                color: 'green',
+                            },
+                            {
+                                children: 'Mobile developer at Digital Empire (2022)',
+                                color: 'green',
+                            },
+                            {
+                                children: 'Graduated from College (2022)',
+                                color: 'orange',
+                            },
+                            {
+                                children: 'Freelance React projects (2022)',
+                                color: 'green',
+                            },
+                            {
+                                children: 'Machine Learning Intern at Podcastle, worked on computer vision, speech-to-text, text-to-speech APIs (2021)',
+                                color: 'green',
+                            },
+                            {
+                                children: 'First commercial IOT project, garden watering system (2021)',
+                                color: 'green',
+                            },
+                            {
+                                children: 'Graduated from TUMO (2020)',
+                                color: 'orange',
+                            },
+                            {
+                                children: 'Crafted my first racing Drone (2019)',
                                 color: 'gray',
+                            },
+                            {
+                                children: 'Applied to TUMO (2018)',
+                                color: 'orange',
+                            },
+                            {
+                                children: 'Became a student at Yerevan State College of Informatics (2018)',
+                                color: 'orange',
+                            },
+                            {
+                                children: 'Participated at DigiTech with robotics team(2017)',
+                                color: 'purple',
+                            },
+                            {
+                                children: 'Was introduced to Arduino at Robotics class (2017)',
+                                color: 'orange',
                             }
+
                         ]}
                     />
                 </ParallaxLayer>
