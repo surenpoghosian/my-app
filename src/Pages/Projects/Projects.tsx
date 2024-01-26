@@ -94,7 +94,7 @@ export const Projects: React.FC = () => {
                         setModalContent({
                             image:'https://private-user-images.githubusercontent.com/56313895/299473086-3ec2c9cd-1179-4ecb-90e5-5119d3f0ac7c.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDYxMzQ0MjUsIm5iZiI6MTcwNjEzNDEyNSwicGF0aCI6Ii81NjMxMzg5NS8yOTk0NzMwODYtM2VjMmM5Y2QtMTE3OS00ZWNiLTkwZTUtNTExOWQzZjBhYzdjLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDAxMjQlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQwMTI0VDIyMDg0NVomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTY2ODgyZTI2MjcyNjQ3N2ExN2JkYTIzZDllZDE4NTA3MzI0YzQxZDU1MDE1MjEwY2EwZjBmNTk4YWFkMjU3MmEmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.iEFsyYyQxemel8dkwWc_aeU1fqNHCVkrYUFQUAeDbVI', 
                             title:'Talkie', 
-                            description:"Talkie is a sime Text-To-Speech generator base on Suno-Bark python lib wrapped up with noje js express api and React js. \n This project was developed in 9 hours during Picsart's HackDay", 
+                            description:"Talkie is a simple Text-To-Speech generator base on Suno-Bark python lib wrapped up with noje js express api and React js. \n This project was developed in 9 hours during Picsart's HackDay", 
                             url:'https://github.com/surenpoghosian/TalkieFrontEnd/tree/main',
                             urlTitle:'GitHub'
                         }); 
