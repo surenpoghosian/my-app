@@ -48,7 +48,7 @@ export const About: React.FC = () => {
                             },
                             {
                                 children: 'Deployed my first app to App Store | Greedy Kings (2023)',
-                                color: 'green',
+                                color: 'blue',
                             },
                             {
                                 children: 'Invia Investments | React js, TypeScript, Jest (2023)',
