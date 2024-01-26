@@ -1,12 +1,11 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import styles from './NavBar.module.css'
 
 export function NavBar(){
     
     return(
         <nav className={styles.mask}>
-            <a href="/home">Suren Poghosyan</a>
+            <a href="/home" style={{ marginTop:'15px', zIndex:1 }}>Suren Poghosyan</a>
             <ul className={styles.list}>
                 <li><a href="/home">Home</a></li>
                 <li><a href="/projects">Projects</a></li>

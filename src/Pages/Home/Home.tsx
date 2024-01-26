@@ -36,7 +36,7 @@ export const Home: React.FC = () => {
 
     return (
         <div className={styles.container}>
-            <Parallax pages={5} ref={parallax}>
+            <Parallax pages={window.innerWidth < 1200 ? 3 : 5} ref={parallax}>
                 <ParallaxLayer offset={0} speed={0.5} style={{ ...alignCenter, justifyContent: 'center', flexDirection:'column' }}>
                         <div className={styles.avatarWrapper}>
                             <img className={styles.avatar} alt="" src="/assets/avatar.png"/>
@@ -47,20 +47,24 @@ export const Home: React.FC = () => {
                         {showArrow && <div className={styles.arrowDown} onClick={()=>{parallax.current.scrollTo(1)}}></div>}
                     </div>
                 </ParallaxLayer>
+                {window.innerWidth < 1200 ?                 
+                    <ParallaxLayer offset={0.5} style={{ ...alignCenter, justifyContent: 'flex-start',  maxWidth:'700px' }}>
+                        <div className={`${styles.card} ${styles.sticky} ${styles.parallax}`} style={{cursor:'pointer'}} onClick={()=>{window.location.replace('/about')}}> 
+                            <h2 >About Me</h2>
+                            <p style={{color: 'gray'}}>I am a 21-year-old software developer with more than three years of experience. My interests include running, music, motorcycles, and photography. Over the past year, I have participated in various IT events and almost every public event hosted at AUA. I can say that this was one of my best decisions. In the spring of 2023, I was listed as a top performer in a simulated drone racing competition at CSE. This achievement led to a real-life experience at Azatazen with other students, where we flew different types of drones and gained valuable experience. These events led to closer communication with fellow students, and I participated as an actor and technical director in three film classes. My most unforgettable experience was at EPIC Jam 3, where I teamed up with a student I knew from our film presentation. We worked intensively for two days to solve a sustainability-related problem. Currently, I’m full of energy and am looking for opportunities where others might still miss them.
+                                </p>
+                        </div>
+                    </ParallaxLayer>
+                : 
 
-                <ParallaxLayer sticky={{ start: 1, end: 3.2 }} style={{ ...alignCenter, justifyContent: 'flex-start',  maxWidth:'700px' }}>
-                    <div className={`${styles.card} ${styles.sticky} ${styles.parallax}`} style={{cursor:'pointer'}} onClick={()=>{window.location.replace('/about')}}> 
-                        <h2 >About Me</h2>
-                        <p style={{color: 'gray'}}>I am a 21-year-old software developer with more than three years of experience. My interests include running, music, motorcycles, and photography. Over the past year, I have participated in various IT events and almost every public event hosted at AUA. I can say that this was one of my best decisions.
-
-In the spring of 2023, I was listed as a top performer in a simulated drone racing competition at CSE. This achievement led to a real-life experience at Azatazen with other students, where we flew different types of drones and gained valuable experience.
-
-These events led to closer communication with fellow students, and I participated as an actor and technical director in three film classes. My most unforgettable experience was at EPIC Jam 3, where I teamed up with a student I knew from our film presentation. We worked intensively for two days to solve a sustainability-related problem.
-
-Currently, I’m full of energy and am looking for opportunities where others might still miss them.
-                            </p>
-                    </div>
-                </ParallaxLayer>
+                    <ParallaxLayer sticky={{ start: 1, end: 3.2 }} style={{ ...alignCenter, justifyContent: 'flex-start',  maxWidth:'700px' }}>
+                        <div className={`${styles.card} ${styles.sticky} ${styles.parallax}`} style={{cursor:'pointer'}} onClick={()=>{window.location.replace('/about')}}> 
+                            <h2 >About Me</h2>
+                            <p style={{color: 'gray'}}>I am a 21-year-old software developer with more than three years of experience. My interests include running, music, motorcycles, and photography. Over the past year, I have participated in various IT events and almost every public event hosted at AUA. I can say that this was one of my best decisions. In the spring of 2023, I was listed as a top performer in a simulated drone racing competition at CSE. This achievement led to a real-life experience at Azatazen with other students, where we flew different types of drones and gained valuable experience. These events led to closer communication with fellow students, and I participated as an actor and technical director in three film classes. My most unforgettable experience was at EPIC Jam 3, where I teamed up with a student I knew from our film presentation. We worked intensively for two days to solve a sustainability-related problem. Currently, I’m full of energy and am looking for opportunities where others might still miss them.
+                                </p>
+                        </div>
+                    </ParallaxLayer>
+                }
 
                 <ParallaxLayer offset={1} speed={1.5} style={{ ...alignCenter, justifyContent: 'flex-end' }} onClick={()=>{window.location.replace('/projects')}}>
                     <div className={`${styles.card} ${styles.parallax}`} style={{cursor:'pointer'}} >
@@ -70,7 +74,7 @@ Currently, I’m full of energy and am looking for opportunities where others mi
                     </div>
                 </ParallaxLayer>
 
-                <ParallaxLayer offset={1.5} speed={1.5} style={{ ...alignCenter, justifyContent: 'flex-end' }} onClick={()=>{window.location.replace('/projects')}}>
+                <ParallaxLayer offset={1.4} speed={1.5} style={{ ...alignCenter, justifyContent: 'flex-end' }} onClick={()=>{window.location.replace('/projects')}}>
                     <div className={`${styles.card} ${styles.parallax}`} style={{cursor:'pointer'}}>
                         <h2>Creative Projects</h2>
                         <img src="/assets/camera_1.png" alt="Project" className={styles.cardImage} />
@@ -78,23 +82,27 @@ Currently, I’m full of energy and am looking for opportunities where others mi
                     </div>
                 </ParallaxLayer>
 
-                <ParallaxLayer offset={2} speed={1.5} style={{ ...alignCenter, justifyContent: 'flex-end' }} onClick={()=>{window.location.replace('/about')}}>
+                <ParallaxLayer offset={1.8} speed={1.5} style={{ ...alignCenter, justifyContent: 'flex-end' }} onClick={()=>{window.location.replace('/about')}}>
                     <div className={`${styles.card} ${styles.parallax}`} style={{cursor:'pointer'}}>
                         <h2>Skills & Expertise</h2>
                         <img src="/assets/iMac.png" alt="Skills" className={styles.cardImage} />
                         <p style={{color: 'gray'}}>Proficient in JavaScript, React, Node.js, and more. I have a strong foundation in...</p>
                     </div>
                 </ParallaxLayer>
-
-                <ParallaxLayer offset={2.5} speed={1.5} style={{ ...alignCenter, justifyContent: 'flex-end' }} onClick={()=>{window.location.replace('/about')}}>
+                {
+                window.innerWidth < 1200 
+                ?
+                <></>
+                :
+                <ParallaxLayer offset={1.9} speed={1.5} style={{ ...alignCenter, justifyContent: 'flex-end' }} onClick={()=>{window.location.replace('/about')}}>
                     <div className={`${styles.card} ${styles.parallax}`} style={{cursor:'pointer'}}>
                         <h2>Testimonials</h2>
                         <img src="/assets/printer.png" alt="Testimonial" className={styles.cardImage} />
                         <p style={{color: 'gray'}}>"Completed the assigned task professionally and considered feedback on priority." - StartXLabs</p>
                     </div>
                 </ParallaxLayer>
-
-                <ParallaxLayer offset={4} speed={1.5} style={{ ...alignCenter, justifyContent: 'center', cursor:'pointer', marginTop:'100px' }} onClick={()=>{window.location.replace('/contacts')}}>
+                }
+                <ParallaxLayer offset={2} speed={1.5} style={{ ...alignCenter, justifyContent: 'center', cursor:'pointer', marginTop:'100px' }} onClick={()=>{window.location.replace('/contacts')}}>
                     <div className={`${styles.card} ${styles.parallax} ${styles.contact}`}>
                         <h2>Contact Me</h2>
                     </div>

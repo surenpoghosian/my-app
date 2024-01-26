@@ -1,0 +1,62 @@
+/* MobileMenu.module.css */
+.mobile_menu_container {
+    position: relative;
+    color: white;
+    font-family: Arial, sans-serif;
+    width: 100%;
+}
+
+.menu_toggle {
+    position: absolute;
+    top: 10px;
+    width: 100px;
+    right: 0px;
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+    z-index: 1001;
+}
+.menu_toggle:active,
+.menu_toggle:focus {
+    background: transparent;
+    outline: none;
+}
+
+.menu_content {
+    display: flex;
+    align-items: flex-start;
+    position: fixed;
+    align-items: center;
+    top: 0;
+    right: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8) ;
+    overflow-y: auto;
+    z-index: 2;
+    transition: right 0.5s ease;
+}
+
+.menu_content_open {
+    right: 0;
+}
+
+.menu_nav {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 80% 20px;
+}
+
+.menu_nav a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 10px 0;
+    font-size: 2em;
+    border-bottom: 1px solid white;
+    transition: background-color 0.3s ease;
+}
+

@@ -235,6 +235,12 @@ button:hover {
   transform: translateY(-50%);    
 }
 
+@media only screen and (max-width: 640px) {
+  .line_1{
+    font-size: 1.7rem;
+  }
+}
+
 .anim_typewriter{
   animation: typewriter 2s steps(22) 1s 1 normal both,
   blinkTextCursor 500ms steps(22) infinite normal;
