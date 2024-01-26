@@ -85,10 +85,9 @@ export const Projects: React.FC = () => {
                             urlTitle:'GitHub'
                         }); 
                         showModal()
+                        
                         }}>
-                        <h2>The Long Story | Greedy Kings</h2>
-                        <p style={{color: 'gray', opacity: 0.4}}>Discover more of my work on my <a href="https://github.com/surenpoghosian"  ><u>GitHub profile</u></a>.</p>
-
+                            <ItemContent title="The Long Story | Greedy Kings"/>
                     </div>
                     <div className={`${styles.card} ${styles.parallax}`} onClick={()=>{
                         setModalContent({
@@ -100,8 +99,8 @@ export const Projects: React.FC = () => {
                         }); 
                         showModal()
                         }}>
-                        <h2>Talkie</h2>
-                        <p style={{color: 'gray', opacity: 0.4}}>Discover more of my work on my <a href="https://github.com/surenpoghosian"  ><u>GitHub profile</u></a>.</p>
+
+                        <ItemContent title="Talkie"/>
 
                     </div>
                     <div className={`${styles.card} ${styles.parallax}`} onClick={()=>{
@@ -114,8 +113,7 @@ export const Projects: React.FC = () => {
                         }); 
                         showModal()
                         }}>
-                        <h2>Magic QR</h2>
-                        <p style={{color: 'gray', opacity: 0.4}}>Discover more of my work on my <a href="https://github.com/surenpoghosian"  ><u>GitHub profile</u></a>.</p>
+                        <ItemContent title="Magic QR"/>
 
                     </div>
                     <div className={`${styles.card} ${styles.parallax}`} onClick={()=>{
@@ -128,9 +126,8 @@ export const Projects: React.FC = () => {
                         }); 
                         showModal()
                         }}>
-                        <h2>Landmarks</h2>
-                        <p style={{color: 'gray', opacity: 0.4}}>Discover more of my work on my <a href="https://github.com/surenpoghosian"  ><u>GitHub profile</u></a>.</p>
-
+                        <ItemContent title="Landmarks"/>
+                            
                     </div>
                     <div className={`${styles.card} ${styles.parallax}`} onClick={()=>{
                         setModalContent({
@@ -142,8 +139,7 @@ export const Projects: React.FC = () => {
                         }); 
                         showModal()
                         }}>
-                        <h2>The Long Story | Trailer</h2>
-                        <p style={{color: 'gray', opacity: 0.4}}>Discover more of my work on my <a href="https://github.com/surenpoghosian"  ><u>GitHub profile</u></a>.</p>
+                        <ItemContent title="The Long Story | Trailer"/>
 
                     </div>
                     <div className={`${styles.card} ${styles.parallax}`} onClick={()=>{
@@ -156,8 +152,7 @@ export const Projects: React.FC = () => {
                         }); 
                         showModal()
                         }}>
-                        <h2>Generative AI</h2>
-                        <p style={{color: 'gray', opacity: 0.4}}>Discover more of my work on my <a href="https://github.com/surenpoghosian"  ><u>GitHub profile</u></a>.</p>
+                        <ItemContent title="Generative AI"/>
                     </div>
             </ParallaxLayer>
 
@@ -193,3 +188,26 @@ export const Projects: React.FC = () => {
         </div>
     );
 };
+
+interface ItemContentProps {
+    title: string; // Define the type of 'title' as string
+}
+
+
+const ItemContent: React.FC<ItemContentProps> = ({ title }) => {
+    return(<>
+        {window.innerWidth < 1200 
+            ? 
+                <>
+                    <h3>{title}</h3>
+                    <p style={{color: 'gray', opacity: 0.4, padding: "0px 0px 0px 0px"}}>Discover more of my work on my <a href="https://github.com/surenpoghosian"  ><u>GitHub</u></a>.</p>
+                </>
+            :
+                <>
+                    <h2>{title}</h2>
+                    <p style={{color: 'gray', opacity: 0.4}}>Discover more of my work on my <a href="https://github.com/surenpoghosian"  ><u>GitHub</u></a>.</p>
+                </>
+            }
+    </>
+    )
+}

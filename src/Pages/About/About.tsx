@@ -21,7 +21,7 @@ export const About: React.FC = () => {
     return (
         <div className={styles.container}>
             <Parallax pages={2}>
-                <ParallaxLayer  offset={0.2} speed={0.5} >
+                <ParallaxLayer  offset={window.innerWidth < 1200 ?  0.1 : 0.2} speed={0.5} >
                     <div className={styles.cardImageWrapper} style={{flexDirection:'column', alignItems:'center', display:'flex'}}>
                     <Lottie options={defaultOptions}
                         height={300}
