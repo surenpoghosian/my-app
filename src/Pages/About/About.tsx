@@ -79,7 +79,7 @@ export const About: React.FC = () => {
                                 color: 'purple',
                             },
                             {
-                                children: 'Video creation internship with Generative Ai at Picsart Academy (2023)',
+                                children: 'Video creation with Generative Ai internship at Picsart Academy (2023)',
                                 color: 'green',
                             },
                             {
