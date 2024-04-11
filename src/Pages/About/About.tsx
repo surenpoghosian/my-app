@@ -33,13 +33,17 @@ export const About: React.FC = () => {
 
                 <ParallaxLayer offset={0.6} speed={2} >
                     <Timeline
-                        reverse={true}
+                        // reverse={true}
                         style={{ color: 'gray' }}
                         mode="alternate"
-                        pending="Suren is busy shaping his future..."
+                        // pending="Suren is busy shaping his future..."
                         items={[
                             {
-                                children: 'Epic Jam 3 | 2nd Spin (2024)',
+                                children: 'AUA Epic Incubation Program Resident | Clubroomz (2024)',
+                                color: 'purple',
+                            },
+                            {
+                                children: 'AUA Epic Jam 3 | 2nd Spin (2024)',
                                 color: 'purple',
                             },
                             {
@@ -55,7 +59,7 @@ export const About: React.FC = () => {
                                 color: 'green',
                             },
                             {
-                                children: 'Attended DigiTech23 as Academy student with a speech about generative Ai (2023)',
+                                children: 'Attended DigiTech23 as an Academy student with a speech about Generative AI (2023)',
                                 color: 'pruple',
                             },
                             {

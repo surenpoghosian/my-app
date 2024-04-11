@@ -9,7 +9,7 @@ export function Router(){
     return(
         <BrowserRouter>
         <Routes>
-            <Route path="/" element={<Navigate to="/home" />} />
+            <Route path="/" element={<Navigate to="/about" />} />
             <Route path="/home" element={<Home/>} />
             <Route path="projects" element={<Projects />} />
             <Route path="/about" element={<About/>} />
