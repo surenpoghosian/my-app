@@ -5,6 +5,7 @@ import { MobileMenu } from './Pages/NavBar/MobileNavBar';
 import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
 import styles from './App.module.css'
+import { Analytics } from "@vercel/analytics/react"
 
 const firebaseConfig = {
   apiKey: "AIzaSyBKVoLLj8iu0aaLfvLp1DtoUWaeFLNNEp0",
@@ -24,6 +25,7 @@ const App: React.FC = () => {
 
 return(
   <div>
+    <Analytics/>
     <div className={styles.navBar}>
       <NavBar/>
     </div>
