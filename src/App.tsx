@@ -6,6 +6,7 @@ import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
 import styles from './App.module.css'
 import { Analytics } from "@vercel/analytics/react"
+import { SpeedInsights } from "@vercel/speed-insights/react"
 
 const firebaseConfig = {
   apiKey: "AIzaSyBKVoLLj8iu0aaLfvLp1DtoUWaeFLNNEp0",
@@ -25,6 +26,7 @@ const App: React.FC = () => {
 
 return(
   <div>
+    <SpeedInsights/>
     <Analytics/>
     <div className={styles.navBar}>
       <NavBar/>

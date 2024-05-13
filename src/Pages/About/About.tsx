@@ -39,6 +39,10 @@ export const About: React.FC = () => {
                         // pending="Suren is busy shaping his future..."
                         items={[
                             {
+                                children: 'Picsart | Software Engineer 1 | Foundational AI Tools (2024)',
+                                color: 'green',
+                            },
+                            {
                                 children: 'AUA Epic Incubation Program Resident | Clubroomz (2024)',
                                 color: 'purple',
                             },
