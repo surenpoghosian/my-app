@@ -47,6 +47,10 @@ export const About: React.FC = () => {
                                 color: 'blue',
                             },
                             {
+                                children: '24rd place in “Yeghiazaryan Cup 2024” programming Competition (2024)',
+                                color: 'purple',
+                            },
+                            {
                                 children: 'Picsart | Software Engineer 1 | Foundational AI Tools (2024)',
                                 color: 'green',
                             },
