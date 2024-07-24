@@ -39,7 +39,7 @@ export const About: React.FC = () => {
                         // pending="Suren is busy shaping his future..."
                         items={[
                             {
-                                children: 'First open source contribution | DefinetlyTyped | Typescript',
+                                children: 'First open source contribution | DefinetlyTyped | Typescript (2024)',
                                 color: 'blue',
                             },
                             {
