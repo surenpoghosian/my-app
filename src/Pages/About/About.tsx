@@ -44,7 +44,7 @@ export const About: React.FC = () => {
                             },
                             {
                                 children: 'Mentor at PyData Yerevan | Pandas open source contribution (2024)',
-                                color: 'blue',
+                                color: 'purple',
                             },
                             {
                                 children: '24th place in “Yeghiazaryan Cup 2024” programming Competition (2024)',
