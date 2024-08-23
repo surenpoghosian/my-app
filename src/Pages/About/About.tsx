@@ -39,7 +39,7 @@ export const About: React.FC = () => {
                         // pending="Suren is busy shaping his future..."
                         items={[
                             {
-                                children: 'Published my first npm package - Code Diagnose (beta) (2024)',
+                                children: 'Published first npm package - Code Diagnose (beta) (2024)',
                                 color: 'blue',
                             },
                             {
