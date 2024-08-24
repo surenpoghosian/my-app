@@ -87,7 +87,33 @@ export const Projects: React.FC = () => {
                         showModal()
                         
                         }}>
-                            <ItemContent title="The Long Story | Greedy Kings"/>
+                            <ItemContent title="The Long Story | Greedy Kings" description='Offline multiplayer for iOS'/>
+                    </div>
+                    <div className={`${styles.card} ${styles.parallax}`} onClick={()=>{
+                        setModalContent({
+                            image:'', 
+                            title:'Code Diagnose', 
+                            description:"A tool to analyze project for software anti patterns", 
+                            url:'https://www.npmjs.com/package/code-diagnose',
+                            urlTitle:'NPM'
+                        }); 
+                        showModal()
+                        
+                        }}>
+                            <ItemContent title="Code Diagnose" description='A tool to analyze project for software anti patterns'/>
+                    </div>
+                    <div className={`${styles.card} ${styles.parallax}`} onClick={()=>{
+                        setModalContent({
+                            image:'https://private-user-images.githubusercontent.com/56313895/277160093-dea4c546-b9f3-4cc7-8228-6182ee0d36f9.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDYxMzM0NTEsIm5iZiI6MTcwNjEzMzE1MSwicGF0aCI6Ii81NjMxMzg5NS8yNzcxNjAwOTMtZGVhNGM1NDYtYjlmMy00Y2M3LTgyMjgtNjE4MmVlMGQzNmY5LnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDAxMjQlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQwMTI0VDIxNTIzMVomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTA0ZmJmNjk0MzgxYzg5ZDIxMGU0ZmQzMzA3YTE0OWEwZDUwZjI4NTU0MDhiOTYyODY5ODFiMDU3YjFlMGRkMjUmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.4DiqilWerlvHLFBOQOvLL-Ob7wa1YhEDQIXNjOP_NrI', 
+                            title:'Scraper', 
+                            description:"The Scraper project showcases the practical use of Factory, Builder, and Singleton design patterns through a modular and extensible web scraper that periodically scrapes web pages based on a configurable interval.", 
+                            url:'https://github.com/surenpoghosian/scraper',
+                            urlTitle:'GitHub'
+                        }); 
+                        showModal()
+                        
+                        }}>
+                            <ItemContent title="Scraper" description='Schedulable web page scraper'/>
                     </div>
                     <div className={`${styles.card} ${styles.parallax}`} onClick={()=>{
                         setModalContent({
@@ -100,7 +126,7 @@ export const Projects: React.FC = () => {
                         showModal()
                         }}>
 
-                        <ItemContent title="Talkie"/>
+                        <ItemContent title="Talkie" description='A simple text-to-speech web application'/>
 
                     </div>
                     <div className={`${styles.card} ${styles.parallax}`} onClick={()=>{
@@ -113,7 +139,7 @@ export const Projects: React.FC = () => {
                         }); 
                         showModal()
                         }}>
-                        <ItemContent title="Magic QR"/>
+                        <ItemContent title="Magic QR" description='Tool for generating AI based QR codes'/>
 
                     </div>
                     <div className={`${styles.card} ${styles.parallax}`} onClick={()=>{
@@ -126,10 +152,10 @@ export const Projects: React.FC = () => {
                         }); 
                         showModal()
                         }}>
-                        <ItemContent title="Landmarks"/>
+                        <ItemContent title="Landmarks" description='Catalog app based on swiftUI'/>
                             
                     </div>
-                    <div className={`${styles.card} ${styles.parallax}`} onClick={()=>{
+                    {/* <div className={`${styles.card} ${styles.parallax}`} onClick={()=>{
                         setModalContent({
                             image:'', 
                             title:'The Long Story | Trailer', 
@@ -139,10 +165,10 @@ export const Projects: React.FC = () => {
                         }); 
                         showModal()
                         }}>
-                        <ItemContent title="The Long Story | Trailer"/>
+                        <ItemContent title="The Long Story | Trailer" description='Trailer of Greedy Kings'/>
 
-                    </div>
-                    <div className={`${styles.card} ${styles.parallax}`} onClick={()=>{
+                    </div> */}
+                    {/* <div className={`${styles.card} ${styles.parallax}`} onClick={()=>{
                         setModalContent({
                             image:'https://github.com/surenpoghosian/imager/assets/56313895/793e99fe-3fe0-4b51-a044-67b84d986240', 
                             title:'Generative AI | Stable DIffusion', 
@@ -152,8 +178,8 @@ export const Projects: React.FC = () => {
                         }); 
                         showModal()
                         }}>
-                        <ItemContent title="Generative AI"/>
-                    </div>
+                        <ItemContent title="Generative AI" description='A playlist of AI generated content'/>
+                    </div> */}
             </ParallaxLayer>
 
                 {/* <ParallaxLayer offset={1} speed={1} style={{ ...alignCenter, flexDirection:'column'  }}>
@@ -165,7 +191,7 @@ export const Projects: React.FC = () => {
                 </ParallaxLayer> */}
 
                 <ParallaxLayer offset={1} speed={1} style={{ ...alignCenter, justifyContent: 'center', cursor:'pointer', marginTop:'100px' }} onClick={()=>{window.location.replace('/contacts')}}>
-                    <div className={`${styles.card} ${styles.parallax} ${styles.contact}`}>
+                    <div className={`${styles.contactme} ${styles.parallax} ${styles.contact}`}>
                         <h2>Contact Me</h2>
                     </div>
                 </ParallaxLayer>
@@ -191,21 +217,22 @@ export const Projects: React.FC = () => {
 
 interface ItemContentProps {
     title: string; // Define the type of 'title' as string
+    description: string; // Define the type of 'title' as string
 }
 
 
-const ItemContent: React.FC<ItemContentProps> = ({ title }) => {
+const ItemContent: React.FC<ItemContentProps> = ({ title, description }) => {
     return(<>
         {window.innerWidth < 1200 
             ? 
                 <>
                     <h3>{title}</h3>
-                    <p style={{color: 'gray', opacity: 0.4, padding: "0px 0px 0px 0px"}}>Discover more of my work on my <a href="https://github.com/surenpoghosian"  ><u>GitHub</u></a>.</p>
+                    <p style={{color: 'gray', opacity: 0.4, padding: "0px 0px 0px 0px"}}>{description}</p>
                 </>
             :
                 <>
                     <h2>{title}</h2>
-                    <p style={{color: 'gray', opacity: 0.4}}>Discover more of my work on my <a href="https://github.com/surenpoghosian"  ><u>GitHub</u></a>.</p>
+                    <p style={{color: 'gray', opacity: 0.4}}>{description}</p>
                 </>
             }
     </>

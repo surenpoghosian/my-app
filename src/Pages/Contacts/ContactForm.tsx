@@ -66,7 +66,7 @@ export const ContactForm: React.FC = () => {
         toggleAlert('Form submission was successful!', 'success');
       } catch (e) {
         console.error(e);
-        toggleAlert('Uh oh. Something went wrong.', 'danger');
+        toggleAlert('Something went wrong.', 'danger');
       } finally {
         setDisabled(false);
         setLoading(false)
