@@ -33,17 +33,23 @@ export const About: React.FC = () => {
 
                 <ParallaxLayer offset={0.6} speed={2} >
                     <Timeline
-                        // reverse={true}
                         style={{ color: 'gray' }}
                         mode="alternate"
-                        // pending="Suren is busy shaping his future..."
                         items={[
+                            {
+                                children: "Recognized as The Best Solo Developer | Picsart's Internal Hackathon (2024)",
+                                color: 'purple',
+                            },
+                            {
+                                children: "Built my first rack server (2024)",
+                                color: 'gray',
+                            },
                             {
                                 children: 'Joined AUA Drone Club (2024)',
                                 color: 'purple',
                             },
                             {
-                                children: 'First published npm package - Code Diagnose (beta) (2024)',
+                                children: 'Published my first npm package - Code Diagnose (beta) (2024)',
                                 color: 'blue',
                             },
                             {
@@ -51,11 +57,11 @@ export const About: React.FC = () => {
                                 color: 'blue',
                             },
                             {
-                                children: 'Mentor at PyData Yerevan | Pandas open source contribution (2024)',
+                                children: 'Mentor at PyData Yerevan x AUA| Pandas | Open Source Contribution (2024)',
                                 color: 'purple',
                             },
                             {
-                                children: '24th place in “Yeghiazaryan Cup 2024” programming Competition (2024)',
+                                children: '24th place at “Yeghiazaryan Cup 2024” programming Competition (2024)',
                                 color: 'purple',
                             },
                             {
@@ -71,11 +77,11 @@ export const About: React.FC = () => {
                                 color: 'purple',
                             },
                             {
-                                children: "Participated Picsart's b2b hackathon (2024)",
+                                children: "Participated Picsart's B2B Internal Hackathon (2024)",
                                 color: 'purple',
                             },
                             {
-                                children: 'Deployed my first app to App Store | Greedy Kings (2023)',
+                                children: 'Published my first app to App Store | Greedy Kings (2023)',
                                 color: 'blue',
                             },
                             {
@@ -83,7 +89,7 @@ export const About: React.FC = () => {
                                 color: 'green',
                             },
                             {
-                                children: 'Attended DigiTech23 as an Academy student with a speech about Generative AI (2023)',
+                                children: "Attended DigiTech23 as Picsart Academy's representative student, with a speech about Video Generative AI (2023)",
                                 color: 'pruple',
                             },
                             {
@@ -91,15 +97,15 @@ export const About: React.FC = () => {
                                 color: 'green',
                             },
                             {
-                                children: "iOS Bootcamp graduation, my team's project was recognized as one of two best projects (2023)",
+                                children: "Graduated from Picsart Academy | iOS Bootcamp | My app was recognized as one of two best projects (2023)",
                                 color: 'orange',
                             },
                             {
-                                children: 'Picsart HackDay (2023)',
+                                children: "Participated in Picsart's HackDay | Internal Hackathon (2023)",
                                 color: 'purple',
                             },
                             {
-                                children: 'Ai Design Sprint winner at Picsart | Frank Sinatra Back To Black (2023)',
+                                children: "Won the AI Design Sprint | Picsart | Frank Sinatra Back To Black (2023)",
                                 color: 'purple',
                             },
                             {
@@ -107,7 +113,7 @@ export const About: React.FC = () => {
                                 color: 'green',
                             },
                             {
-                                children: 'Became a student at Picsart Academy, iOS Level Up Bootcamp (2023)',
+                                children: 'Joined Picsart Academy | iOS course (2023)',
                                 color: 'orange',
                             },
                             {
@@ -119,11 +125,11 @@ export const About: React.FC = () => {
                                 color: 'green',
                             },
                             {
-                                children: 'Graduated from College (2022)',
+                                children: 'Graduated from Yerevan State College of Informatics (2022)',
                                 color: 'orange',
                             },
                             {
-                                children: 'Freelance React projects (2022)',
+                                children: 'Freelance React Developer (2022)',
                                 color: 'green',
                             },
                             {
@@ -131,7 +137,7 @@ export const About: React.FC = () => {
                                 color: 'green',
                             },
                             {
-                                children: 'First commercial IOT project, garden watering system (2021)',
+                                children: 'First commercial IOT project, watering system for gardens (2021)',
                                 color: 'green',
                             },
                             {
@@ -139,23 +145,23 @@ export const About: React.FC = () => {
                                 color: 'orange',
                             },
                             {
-                                children: 'Crafted my first racing Drone (2019)',
+                                children: 'Crafted my first racing drone (2019)',
                                 color: 'gray',
                             },
                             {
-                                children: 'Applied to TUMO (2018)',
+                                children: 'Joined TUMO Yerevan as a student (2018)',
                                 color: 'orange',
                             },
                             {
-                                children: 'Became a student at Yerevan State College of Informatics (2018)',
+                                children: 'Joined Yerevan State College of Informatics as a student (2018)',
                                 color: 'orange',
                             },
                             {
-                                children: 'Participated at DigiTech with robotics team(2017)',
+                                children: 'Participated DigiTech Expo 2017, with robotics team (2017)',
                                 color: 'purple',
                             },
                             {
-                                children: 'Was introduced to Arduino at Robotics class (2017)',
+                                children: 'Joined Robotics class located in Gavar | Introduction to radio electronics and microcontrollers (2017)',
                                 color: 'orange',
                             }
 
